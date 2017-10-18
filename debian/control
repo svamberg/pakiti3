@@ -16,3 +16,14 @@ Description: Patch Status Monitoring Tool
  .
  This package provides the client part that is able to send information
  about installed software to a defined Pakiti server.
+
+Package: pakiti-server
+Architecture: all
+Depends: ${misc:Depends}, curl, apache2, mysql-server, php5, libapache2-mod-php5, php5-mysql, php5-curl, subversion
+Description: Patch Status Monitoring Tool
+ Pakiti provides a monitoring mechanism to check the patching status of
+ Linux systems.
+ .
+ This package provides the server part that is able to send information
+ about installed software to a defined Pakiti server.
+
